@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <by.maesens.android.ui.view.UserPhotoView
+        android:id="@+id/itemBidUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/itemBidDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/itemBidUser"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="12dp"
+        tools:text="right"/>
+
+    <TextView
+        android:id="@+id/itemBidType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/itemBidUser"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        tools:text="left"/>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/itemBidUser"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvBidsStoryTitle"
+            android:text="@string/bids_story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"
+            style="@style/Maesens.TextView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvListOfBids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBidsStoryTitle"
+            android:layout_marginLeft="@dimen/card_elements_big_margin"
+            android:layout_marginRight="@dimen/fragment_big_horizontal_padding"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,34 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        style="@style/Maesens.TextView"
+        android:textSize="24dp"
+        android:text="@string/created_auctions"
+        android:id="@+id/auc_created_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"/>
+
+    <View
+        android:layout_below="@+id/auc_created_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/auc_created_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/auc_created_tv_title"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/auc_created_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eef1f2"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

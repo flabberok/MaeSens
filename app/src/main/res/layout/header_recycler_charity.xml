@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_filter_charity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingLeft="@dimen/card_elements_margin"
+        android:paddingRight="@dimen/card_elements_margin"
+        android:text="@string/all_auctions_wide_search"
+        android:drawableRight="@drawable/ic_navigation_arrow_drop_down"
+        android:textSize="16sp"
+        android:gravity="left|center"
+        android:textColor="@color/colorLightGreyText"
+        android:background="?attr/colorPrimary"/>
+
+    <LinearLayout
+        android:id="@+id/projects_filter"
+        android:layout_below="@+id/tv_filter_charity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/card_elements_margin"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project_categories"/>
+
+        <Spinner
+            android:id="@+id/projects_spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/projects_type_sort"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding" />
+
+        <Spinner
+            android:id="@+id/projects_spinner_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding" />
+
+        <Button
+            android:id="@+id/btn_search_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_search"
+            style="@style/Maesens.Button.Light"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding" />
+    </LinearLayout>
+</RelativeLayout>

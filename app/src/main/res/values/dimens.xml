@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+
+    <!-- Navigation Header. -->
+
+
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">80dp</dimen>
+    <dimen name="nav_header_logo_height">28dp</dimen>
+    <dimen name="nav_header_logo_width">28dp</dimen>
+    <dimen name="nav_header_logo_margin">30dp</dimen>
+    <dimen name="nav_header_logo_padding">10dp</dimen>
+    <dimen name="nav_header_logo_size">20sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="share_width">80dp</dimen>
+    <dimen name="share_height">30dp</dimen>
+    <dimen name="share_padding_top">5dp</dimen>
+    <dimen name="share_padding_left">56dp</dimen>
+    <dimen name="share_padding_right">3dp</dimen>
+    <dimen name="share_twitter_padding_left">53dp</dimen>
+
+    <dimen name="user_name_horizontal_padding">5dp</dimen>
+
+    <dimen name="fragment_small_vertical_padding">5dp</dimen>
+    <dimen name="fragment_big_vertical_padding">10dp</dimen>
+
+    <dimen name="fragment_small_horizontal_padding">5dp</dimen>
+    <dimen name="fragment_big_horizontal_padding">10dp</dimen>
+
+    <dimen name="card_elements_small_margin">15dp</dimen>
+    <dimen name="card_elements_margin">20dp</dimen>
+    <dimen name="card_elements_big_margin">30dp</dimen>
+
+    <dimen name="navigationView_textSize">14sp</dimen>
+    <dimen name="navigationView_itemHieght">48dp</dimen>
+    <dimen name="min_height_header">40dp</dimen>
+
+</resources>

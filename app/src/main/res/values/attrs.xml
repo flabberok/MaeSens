@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UserPhotoView">
+        <attr name="upv_border_width" format="dimension" />
+        <attr name="upv_border_color" format="color" />
+        <attr name="upv_border_overlay" format="boolean" />
+        <attr name="upv_fill_color" format="color" />
+        <attr name="upv_online_status" format="boolean" />
+    </declare-styleable>
+</resources>

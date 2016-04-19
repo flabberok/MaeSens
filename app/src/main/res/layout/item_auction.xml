@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fdfdfd"
+    android:id="@+id/itemLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:id="@+id/item_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:padding="4dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/item_tv_last_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_alignBottom="@id/item_image_view"
+        android:id="@+id/item_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        style="@style/ShadowTextStyle"/>
+
+    <TextView
+        android:id="@+id/item_tv_bid"
+        android:textColor="#2195f1"
+        android:textStyle="bold"
+        android:layout_below="@+id/item_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"/>
+</RelativeLayout>

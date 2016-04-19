@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="position">
+        <item>TODO</item>
+        <item>TODO</item>
+        <item>TODO</item>
+        <item>TODO</item>
+        <item>TODO</item>
+        <item>TODO</item>
+    </string-array>
+
+    <string name="myPage">Моя страница</string>
+    <string name="message">Сообщения</string>
+
+    <string name="meetings_expired">Мои встречи</string>
+    <string name="meetings_exposed">Выставленные</string>
+    <string name="meetings_won">Выигранные</string>
+    <string name="meetings_favorite">Избранные</string>
+
+    <string name="my_binds">Мои ставки</string>
+    <string name="balance">Баланс</string>
+    <string name="info">Информация</string>
+    <string name="exit">Выход</string>
+</resources>

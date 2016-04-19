@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_big_horizontal_padding"
+        android:layout_marginRight="@dimen/fragment_big_horizontal_padding">
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fragment_small_vertical_padding"
+            android:paddingBottom="@dimen/fragment_small_vertical_padding"
+            android:textColor="@color/colorMeetingsDarkText"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:id="@+id/tv_project_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fragment_big_vertical_padding"
+            style="@style/Maesens.TextView.Light"
+            android:layout_below="@+id/tv_project_name"/>
+
+        <include layout="@layout/card_project_main"
+            android:id="@+id/container_main"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_project_category"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"/>
+
+        <include layout="@layout/card_project_description"
+            android:id="@+id/container_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/container_main"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"/>
+
+        <include layout="@layout/card_project_progress"
+            android:id="@+id/container_progress"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/container_description"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"/>
+
+        <include layout="@layout/card_project_auctions"
+            android:id="@+id/container_auctions"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/container_progress"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_big_vertical_padding"/>
+    </RelativeLayout>
+</ScrollView>

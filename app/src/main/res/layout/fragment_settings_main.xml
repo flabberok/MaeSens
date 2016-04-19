@@ -1,0 +1,314 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/newPhoto"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/new_photo_background"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tvNewPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/newPhoto"
+                    android:layout_alignLeft="@+id/newPhoto"
+                    android:layout_alignRight="@+id/newPhoto"
+                    android:layout_alignTop="@+id/newPhoto"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="50dp"
+                    android:drawableTop="@drawable/ic_update_photo_24dp"
+                    android:gravity="center"
+                    android:text="@string/update_avatar"
+                    android:textColor="#FF686565"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/newPhoto"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/name"/>
+
+                <EditText
+                    android:id="@+id/etUserSurname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etUserName"
+                    android:hint="@string/surname"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvUserCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etUserSurname"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/city"
+                    android:textSize="16dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerUserCity"
+                    style="@style/SpinnerItem"
+                    android:layout_below="@id/tvUserCity"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvUserBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerUserCity"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/day_of_birth"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/lnDayOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvUserBirth"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerBirthDay"
+                        style="@style/SpinnerShortItem"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerBirthMonth"
+                        style="@style/SpinnerShortItem"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerBirthYear"
+                        style="@style/SpinnerShortItem"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvHideDate"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnDayOfBirth"
+                    android:text="@string/hide_date"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvUserGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvHideDate"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/gender"
+                    android:textSize="16dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgUserGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserGender"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvUserAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rgUserGender"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/about_yourself"
+                    android:textSize="16dp"/>
+
+                <EditText
+                    android:id="@+id/etUserAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvUserAbout"/>
+
+                <Button
+                    android:id="@+id/btnUpdateMain"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etUserAbout"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/save"/>
+
+                <Button
+                    android:id="@+id/btnUpdateMainCancel"
+                    style="@style/Maesens.Button.White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etUserAbout"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/btnUpdateMain"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/cancel"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/settingsPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvMain"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cbSettingsEndedAuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show_ended"/>
+
+                <CheckBox
+                    android:id="@+id/cbSettingsHideAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cbSettingsEndedAuc"
+                    android:text="@string/show_age"/>
+
+                <Button
+                    android:id="@+id/btnUpdateUserPersonal"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cbSettingsHideAge"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/save"/>
+
+                <Button
+                    android:id="@+id/btnUpdatePersonalCancel"
+                    style="@style/Maesens.Button.White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cbSettingsHideAge"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/btnUpdateUserPersonal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/cancel"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvInterests"
+            android:layout_below="@id/settingsPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/interestsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="14dp"/>
+
+                <TextView
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/tvDeleteInterest"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/interestsRecycler"
+                    android:text="@string/delete_interest"/>
+
+                <EditText
+                    android:id="@+id/etAddInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDeleteInterest"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/interests"
+                    android:inputType="text"/>
+
+                <Button
+                    android:id="@+id/btnAddInterest"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etAddInterest"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/add"/>
+
+                <Button
+                    android:id="@+id/btnCancelInterest"
+                    style="@style/Maesens.Button.White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etAddInterest"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/btnAddInterest"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/cancel"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

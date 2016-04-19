@@ -1,0 +1,94 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/all_auctions_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_auctions_title"
+            android:textColor="@color/colorMeetingsDarkText"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/all_auctions_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/all_auctions_title"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:text="@string/all_auctions_sort"/>
+
+        <TextView
+            android:id="@+id/all_auctions_sort_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/all_auctions_sort"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/all_auctions_sort"
+            android:text="@string/all_auctions_sort_new"/>
+
+        <TextView
+            android:id="@+id/all_auctions_sort_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/all_auctions_sort"
+            android:layout_toRightOf="@id/all_auctions_sort_new"
+            android:text="@string/all_auctions_sort_popular"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/all_auctions_wide_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_auctions_sort"
+            android:text="@string/all_auctions_wide_search"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:drawableRight="@drawable/ic_navigation_arrow_drop_down"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"/>
+
+        <View
+            android:layout_above="@+id/all_auctions_wide_search"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <View
+            android:layout_below="@+id/all_auctions_wide_search"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <by.maesens.android.ui.view.WideSearchView
+            android:layout_below="@id/all_auctions_wide_search"
+            android:id="@+id/viewWideSearch"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/viewWideSearch"
+            android:id="@+id/all_auctions_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_auctions_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eef1f2"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+

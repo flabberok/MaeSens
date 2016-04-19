@@ -1,0 +1,303 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                         xmlns:tools="http://schemas.android.com/tools"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                         android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+        android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+        app:cardBackgroundColor="@color/colorBackgroundCards"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_big_horizontal_padding">
+
+            <TextView
+                android:id="@+id/tvBalance"
+                style="@style/Base.DialogWindowTitle.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"/>
+
+            <TextView
+                android:id="@+id/tvBalanceVal"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvBalance"
+                tools:text="123"/>
+
+            <TextView
+                android:id="@+id/tvBalanceSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBalance"
+                android:layout_marginTop="5dp"
+                android:text="@string/choose_sum"/>
+
+            <Button
+                android:id="@+id/btnBid1"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvBalanceSubTitle"
+                android:layout_marginTop="8dp"
+                android:text="@string/bid_1"/>
+
+            <Button
+                android:id="@+id/btnBid2"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBid1"
+                android:layout_marginTop="4dp"
+                android:text="@string/bid_2"/>
+
+            <Button
+                android:id="@+id/btnBid3"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBid2"
+                android:layout_marginTop="4dp"
+                android:text="@string/bid_3"/>
+
+            <Button
+                android:id="@+id/btnBid4"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBid3"
+                android:layout_marginTop="4dp"
+                android:text="@string/bid_4"/>
+
+            <Button
+                android:id="@+id/btnBid5"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBid4"
+                android:layout_marginTop="4dp"
+                android:text="@string/bid_5"/>
+
+            <Button
+                android:id="@+id/btnBidX"
+                style="@style/Maesens.Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBid5"
+                android:layout_marginTop="4dp"
+                android:text="@string/bid_x"/>
+
+            <CheckBox
+                android:id="@+id/checkboxAgreeRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBidX"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvAgreeRules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/checkboxAgreeRules"
+                android:layout_toRightOf="@id/checkboxAgreeRules"
+                android:text="@string/agree_str"/>
+
+            <TextView
+                android:id="@+id/tvAgreeReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/checkboxAgreeRules"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tvAgreeRules"
+                tools:text="site rules"/>
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="@style/Maesens.Button.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/checkboxAgreeRules"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/continue_btn"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBidStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvBid"
+        android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+        android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+        app:cardBackgroundColor="@color/colorBackgroundCards"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lnStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvRegisterDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="qwerty"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lnMeetings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnStats"
+                android:layout_margin="4dp"
+                android:background="@color/colorPrimaryTransparent"
+                android:padding="4dp"
+                android:paddingBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tvSellCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sell_meetings"/>
+
+                <TextView
+                    android:id="@+id/tvSellCountVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    tools:text="qwey"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lnBids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnMeetings"
+                android:layout_margin="4dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tvBidCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/bids_made"/>
+
+                <TextView
+                    android:id="@+id/tvBidCountVal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    tools:text="qwey"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cvBidStats"
+        android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+        android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+        app:cardBackgroundColor="@color/colorBackgroundCards"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/Base.DialogWindowTitle.AppCompat"
+                android:layout_margin="8dp"
+                android:id="@+id/bidsTitle"
+                android:gravity="center"
+                android:text="@string/stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_below="@+id/bidsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/bidsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/bidsDate"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bid_date"/>
+                <TextView
+                    android:id="@+id/bidsType"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bid_type"/>
+            </LinearLayout>
+            <View
+                android:layout_below="@+id/bidsTitle"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/bidsRecycler"
+                android:layout_marginTop="34dp"
+                android:layout_below="@+id/bidsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</ScrollView>

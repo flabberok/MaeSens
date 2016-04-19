@@ -1,0 +1,700 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profileBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bg_profile"/>
+
+                <View
+                    android:id="@+id/emptyLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/profileBackground"
+                    android:layout_marginTop="52dp"/>
+
+                <ImageView
+                    android:id="@+id/roundBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/emptyLine"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/background_avatar"/>
+
+                <by.maesens.android.ui.view.UserPhotoView
+                    android:id="@+id/cvUserUserPhoto"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignBottom="@+id/roundBackground"
+                    android:layout_alignLeft="@+id/roundBackground"
+                    android:layout_alignRight="@+id/roundBackground"
+                    android:layout_alignTop="@+id/roundBackground"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/background_avatar"/>
+
+                <TextView
+                    android:id="@+id/cvUserUserName"
+                    style="@style/Maesens.TextView.Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profileBackground"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/cvUserUserPhoto"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:text="Имя"/>
+
+                <TextView
+                    android:id="@+id/userAge"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cvUserUserName"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/cvUserUserPhoto"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    tools:text="22"/>
+
+                <TextView
+                    android:id="@+id/cvUserUserLocation"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cvUserUserName"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/userAge"
+                    android:drawableLeft="@drawable/ic_place_24dp"
+                    android:textSize="16dp"
+                    tools:text="Город"/>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/emptyLine"
+                    android:id="@+id/lnButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_margin="4dp"
+                        android:id="@+id/btnSubscribe"
+                        style="@style/Maesens.Button.WhiteAndBlue"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subscribe"/>
+
+                    <Button
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:id="@+id/btnOfferMeeting"
+                        style="@style/Maesens.Button.WhiteAndBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offer_meeting"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/cvUserTotalSum"
+                    style="@style/Maesens.TextView.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnButtons"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    tools:text="100000"/>
+
+                <TextView
+                    android:id="@+id/totalSumTitle"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cvUserTotalSum"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/total_sum"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvSellVal"
+                    style="@style/Maesens.TextView.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalSumTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    tools:text="qwey"/>
+
+                <TextView
+                    android:id="@+id/tvSell"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSellVal"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/sell_meetings"/>
+
+                <TextView
+                    android:id="@+id/tvWinVal"
+                    style="@style/Maesens.TextView.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSell"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18dp"
+                    tools:text="qwey"/>
+
+                <TextView
+                    android:id="@+id/tvWin"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWinVal"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/auctions_won"/>
+
+                <TextView
+                    android:id="@+id/tvBids"
+                    style="@style/Maesens.TextView.Blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWin"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="18dp"
+                    tools:text="qwey"/>
+
+                <TextView
+                    android:id="@+id/tvBidsVal"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBids"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/bids_made"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/cvUserStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvUser"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lnStats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tvRegisterDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="qwerty"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnMeetings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnStats"
+                    android:layout_margin="4dp"
+                    android:background="@color/colorPrimaryTransparent"
+                    android:padding="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/tvSellCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/sell_meetings"/>
+
+                    <TextView
+                        android:id="@+id/tvSellCountVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        tools:text="qwey"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnBids"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnMeetings"
+                    android:layout_margin="4dp"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tvBidCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/bids_made"/>
+
+                    <TextView
+                        android:id="@+id/tvBidCountVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        tools:text="qwey"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvUser"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvVerification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/verification"
+                    android:textSize="16dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/lnEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVerification"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_email_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyEmail"
+                        android:layout_alignTop="@id/imgVerifyEmail"
+                        android:layout_toRightOf="@id/imgVerifyEmail"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/email"/>
+
+                    <ImageView
+                        android:id="@+id/imgEmailVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyEmail"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyEmail"
+                        android:padding="3dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnEmail"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_call_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyPhone"
+                        android:layout_alignTop="@id/imgVerifyPhone"
+                        android:layout_toRightOf="@id/imgVerifyPhone"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/phone"/>
+
+                    <ImageView
+                        android:id="@+id/imgPhoneVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyPhone"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyPhone"
+                        android:padding="3dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnVk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnPhone"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyVk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_vk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyVk"
+                        android:layout_alignTop="@id/imgVerifyVk"
+                        android:layout_toRightOf="@id/imgVerifyVk"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/vk"/>
+
+                    <ImageView
+                        android:id="@+id/imgVkVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyVk"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyVk"
+                        android:padding="3dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnFb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnVk"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyFb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_fb"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyFb"
+                        android:layout_alignTop="@id/imgVerifyFb"
+                        android:layout_toRightOf="@id/imgVerifyFb"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/fb"/>
+
+                    <ImageView
+                        android:id="@+id/imgFbVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyFb"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyFb"
+                        android:padding="3dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAboutUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvVerification"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvAboutUserTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_user"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvAboutUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAboutUserTitle"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlUserInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAboutUser"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvInterestsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/interests"
+                        android:textStyle="bold"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/interestsRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvInterestsTitle"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnUserSettings"
+            style="@style/Maesens.Button.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvAboutUser"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:text="@string/user_settings"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvUserFriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnUserSettings"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvFriendsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/friends"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvFriendsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tvFriendsTitle"
+                    android:textStyle="bold"
+                    tools:text="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvFriendsTitle"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/friendsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFriendsTitle"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="14dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvActiveAuctions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvUserFriends"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvActiveAuctionsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/active_auctions"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvActiveAuctionsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tvActiveAuctionsTitle"
+                    android:textStyle="bold"
+                    tools:text="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvActiveAuctionsTitle"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activeAuctionsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvActiveAuctionsTitle"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="14dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvEndedAuctions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvActiveAuctions"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvEndedAuctionsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ended_auctions"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvEndedAuctionsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/tvEndedAuctionsTitle"
+                    android:textStyle="bold"
+                    tools:text="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tvEndedAuctionsTitle"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/endedAuctionsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvEndedAuctionsTitle"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="14dp"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

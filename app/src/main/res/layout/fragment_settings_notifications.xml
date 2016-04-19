@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <CheckBox
+                    android:id="@+id/notifSuccessCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_success_auc"/>
+
+                <CheckBox
+                    android:id="@+id/notifBeatenBids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifSuccessCreate"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_beated_bids"/>
+
+                <CheckBox
+                    android:id="@+id/notifNewBids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifBeatenBids"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_new_bids"/>
+
+                <CheckBox
+                    android:id="@+id/notifEndedProjects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifNewBids"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_project_ended"/>
+
+                <CheckBox
+                    android:id="@+id/notifBeforeDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifEndedProjects"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_remind_day"/>
+
+                <CheckBox
+                    android:id="@+id/notifBeforeHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifBeforeDay"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_remind_three_hours"/>
+
+                <CheckBox
+                    android:id="@+id/notifUnreadMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifBeforeHour"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_unread_messages_hour"/>
+
+                <CheckBox
+                    android:id="@+id/notifBuyAuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifUnreadMessages"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_auc_with_you"/>
+
+                <CheckBox
+                    android:id="@+id/notifNewAuc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notifBuyAuc"
+                    android:layout_margin="4dp"
+                    android:text="@string/notif_auc_created"/>
+
+                <Button
+                    android:id="@+id/btnUpdateUserMain"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/notifNewAuc"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/save"/>
+
+                <Button
+                    android:id="@+id/btnUpdateCancel"
+                    style="@style/Maesens.Button.White"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/notifNewAuc"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/btnUpdateUserMain"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/cancel"/>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

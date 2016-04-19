@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+    android:layout_marginBottom="@dimen/fragment_big_vertical_padding">
+
+    <by.maesens.android.ui.view.UserPhotoView
+        android:id="@+id/uvUserPhoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:foregroundGravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/user_name_horizontal_padding"
+        android:layout_toRightOf="@+id/uvUserPhoto"
+        android:foregroundGravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/tvBidAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tvBidTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBidAmount"
+        android:layout_alignParentRight="true"
+        style="@style/Maesens.TextView.Light"/>
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MaeSens</string>
+    <string name="all_auctions_title">Все встречи</string>
+    <string name="all_auctions_sort">сортировать по</string>
+    <string name="all_auctions_sort_new">Новые</string>
+    <string name="all_auctions_sort_popular">Популярные</string>
+    <string name="all_auctions_wide_search">Расширенный поиск</string>
+
+    <string name="wide_search_city">в городе</string>
+    <string name="wide_search_spinner_cities_prompt">Выберите город</string>
+    <string name="wide_search_category">в категории</string>
+    <string name="wide_search_spinner_categories_prompt">Выберите категорию</string>
+    <string name="wide_search_sort">сортировать по</string>
+    <string name="wide_search_rb_pair">вдвоем</string>
+    <string name="wide_search_rb_group">группой</string>
+    <string name="wide_search_auction_ended">Показать прошедшие</string>
+    <string name="wide_search_btn_search">Поиск</string>
+    <string name="wide_search_btn_cancel">Сбросить</string>
+
+    <string name="choose_city">Выберите город</string>
+    <string name="choose_category">Выберите категорию</string>
+    <string name="choose_order">Сортировать по</string>
+    <string name="account_already_exists">Аккаунт уже существует</string>
+    <array name="wide_search_sort">
+        <item>Дате создания (новые)</item>
+        <item>Дате создания (старые)</item>
+        <item>Максимальной ставке</item>
+        <item>Минимальной ставке</item>
+        <item>Популярные</item>
+        <item>Непопулярные</item>
+    </array>
+
+    <!-- Menu items-->
+    <string name="create_meeting">Добавить встречу</string>
+    <string name="my_page">Моя страница</string>
+    <string name="news">Новости</string>
+    <string name="messages">Сообщения</string>
+    <string name="add_meeting">Добавить встречу</string>
+    <string name="my_meetings">Мои встречи</string>
+    <string name="meetings">Встречи</string>
+    <string name="pushed">Выставленные</string>
+    <string name="won">Выигранные</string>
+    <string name="favourites">Избранные</string>
+    <string name="my_binds">Мои ставки</string>
+    <string name="projects">Проекты</string>
+    <string name="billing">Баланс</string>
+    <string name="information">Информация</string>
+    <string name="settings">Настройки</string>
+    <string name="logout">Выйти</string>
+    <string name="login">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="select_project_criterias">Выбор</string>
+    <string name="text_end_time_first">до окончания:</string>
+    <string name="text_end_time_second">дней</string>
+    <string name="text_persent">%</string>
+
+    <string name="no_internet_connection">Нет доступа к интернету</string>
+
+    <string name="recipient_of_aid">Получатель помощи</string>
+    <string name="donate_directly">Пожертвовать напрямую</string>
+
+    <string name="text_project_endeded">Проект закрыт</string>
+    <string name="text_project_has_not_end_time">Проект не имеет ограничений по времени</string>
+
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="one_day_left">Остался 1 день</string>
+
+    <string name="project_categories">Выберите категорию проекта</string>
+    <string name="projects_type_sort">Выберите тип сортировки</string>
+    <string name="btn_search">Поиск</string>
+    <string name="sort_projects_parameter_all">Все</string>
+    <string name="sort_projects_parameter_top">Топ</string>
+    <string name="sort_projects_parameter_new">Новые</string>
+    <string name="sort_projects_parameter_old">Старые</string>
+    <string name="sort_projects_parameter_close_enough">Поднажмем</string>
+
+    <string name="no_bids">СТАВОК НЕТ</string>
+
+    <string name="auction_ended">Завершится:</string>
+    <string name="last_bid">Последняя ставка:</string>
+    <string name="increase_bid">Повысить ставку</string>
+    <string name="until_the_end">осталось</string>
+    <string name="days">д</string>
+    <string name="bids">ставки</string>
+
+
+    <string name="auction_leaders">Лидеры аукциона:</string>
+    <string name="auction_winners">Победители аукциона:</string>
+    <string name="bids_story">История ставок:</string>
+
+    <string name="balance">Ваш баланс: </string>
+    <string name="choose_sum">Выберите или введите нужную сумму</string>
+    <string name="bid_1">100 000</string>
+    <string name="bid_2">200 000</string>
+    <string name="bid_3">500 000</string>
+    <string name="bid_4">750 000</string>
+    <string name="bid_5">1 000 000</string>
+    <string name="bid_x">Другая сумма</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="agree_str">Я согласен с </string>
+    <string name="agree_rules">правилами сайта</string>
+    <string name="enter_sum">Введите сумму</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="confirm_info">Нажимая \"Подтвердить\", вы соглашаетесь оплатить встречу, если выиграете.</string>
+    <string name="add_to_balance">Пополнить баланс на:</string>
+    <string name="btn_back">Вернуться</string>
+    <string name="btn_send">Отправить</string>
+    <string name="sell_meetings">Продано встреч</string>
+    <string name="bids_made">Ставок сделано</string>
+    <string name="register_date">Регистрация</string>
+    <string name="stats">Статистика</string>
+    <string name="bid_date">Дата/Время</string>
+    <string name="bid_type">Тип перевода</string>
+    <string name="bid_payment_meeting">Оплата встречи</string>
+    <string name="tv_purpose_project">Цель сбора</string>
+    <string name="tv_description_project">Описание</string>
+    <string name="tv_charity_or">или</string>
+    <string name="create_auction">Создать встречу</string>
+    <string name="raised_funds_from">собрано из</string>
+    <string name="support_project">Поддержать проект напрямую</string>
+    <string name="meetings_in_support">Встречи в поддержку</string>
+    <string name="show_all">Показать все</string>
+
+    <string name="winner">Победитель:</string>
+    <string name="meeting_ended">Встреча завершена</string>
+    <string name="unique">Эксклюзивные встречи</string>
+    <string name="new_meetings">Новые встречи</string>
+    <string name="made_bid"> сделал ставку </string>
+    <string name="made_comment"> оставил комментарий</string>
+
+    <string name="total_sum">Всего собрано</string>
+    <string name="email">Email</string>
+    <string name="phone">Телефон</string>
+    <string name="vk">Вконтакте</string>
+    <string name="fb">Facebook</string>
+    <string name="verification">Верификация</string>
+    <string name="about_user">О пользователе</string>
+    <string name="no_info">Пользователь пока не заполнил информацию о себе.</string>
+    <string name="interests">Интересы</string>
+    <string name="friends">Друзья</string>
+    <string name="active_auctions">Активные встречи</string>
+    <string name="ended_auctions">Прошедшие встречи</string>
+
+
+    <string name="my_bets_title">Мои ставки</string>
+
+
+    <string name="type_donation_1">Оплата встречи</string>
+    <string name="type_donation_2">Перевод напрямую</string>
+    <string name="type_donation_4">Скрытое пожертвование</string>
+
+
+    <string name="user_settings">Настройки пользователя</string>
+    <string name="settings_main">Основные</string>
+    <string name="settings_personal">Персональные</string>
+    <string name="settings_contacts">Контакты</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_linking">Привязка</string>
+    <string name="settings_interests">Интересы</string>
+    <string name="settings_password">Сменить пароль</string>
+    <string name="settings_security">Безопасность</string>
+    <string name="update_photo_title">Обновить фото</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="choose_photo">Выбрать из галереи</string>
+    <string name="update_avatar">Обновить фотографию</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="city">Город</string>
+    <string name="day_of_birth">Дата рождения</string>
+    <string name="hide_date">Будет спрятана от других пользователей</string>
+    <string name="gender">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="about_yourself">О себе</string>
+    <string name="update_info">Обновить информацию</string>
+    <string name="show_ended">Показывать прошедшие встречи</string>
+    <string name="show_age">Скрыть возраст</string>
+    <string name="save">Сохранить</string>
+    <string name="add_interest">Интересы</string>
+    <string name="add">Добавить</string>
+    <string name="empty_interest">Напишите интересы!</string>
+    <string name="interest_length">Максимальная длина 50 символов</string>
+    <string name="notif_success_auc">Уведомления об успешно созданных встречах</string>
+    <string name="notif_beated_bids">Уведомления о перебитых ставках</string>
+    <string name="notif_new_bids">Уведомления о новых ставках к Вашей встрече</string>
+    <string name="notif_project_ended">Уведомления об окончании проектов</string>
+    <string name="notif_remind_day">Напоминания за день до завершения встречи, на которую Вы делали ставку</string>
+    <string name="notif_remind_three_hours">Напоминания за три часа до завершения встречи, на которую Вы делали ставку</string>
+    <string name="notif_unread_messages_hour">Уведомления о непрочитанных сообщениях за последний час</string>
+    <string name="notif_auc_with_you">Уведомления о том, что кто-то хочет купить встречу с Вами</string>
+    <string name="notif_auc_created">Уведомления о том, что пользователь, которого Вы пригласили, создал встречу</string>
+    <string name="change">Изменить</string>
+    <string name="chain">Привязать</string>
+    <string name="change_password">Изменить пароль</string>
+    <string name="delete_interest">Нажмите на элемент для удаления из списка</string>
+    <string name="change_email">Изменение адреса электронной почты</string>
+    <string name="change_email_message">Введите новый email. На него будет отправлено письмо с интрукцией по смене адреса электронной почты.</string>
+    <string name="incorrect_email">Неверный адрес</string>
+    <string name="email_change_success">Проверьте свой электронный ящик и следуйте полученным инструкциям.</string>
+    <string name="email_change_error">Сервер ответил отказом. Попробуйте ввести новый адрес снова.</string>
+    <string name="phone_change_title">Изменение номера телефона</string>
+    <string name="phone_change_message">Вам будет выслано смс с кодом активации</string>
+    <string name="phone_change_new_number">Новый номер</string>
+    <string name="phone_change_code">Код активации</string>
+    <string name="phone_format">формат +375291234567</string>
+    <string name="code_format">3 цифры</string>
+    <string name="take_code">Получить код</string>
+    <string name="confirm_code">Подтвердить код</string>
+
+    <string name="auction_info">Информация</string>
+    <string name="auction_bids">История ставок</string>
+    <string name="auction_comments">Комментарии</string>
+
+    <string name="bid_less_than_minimum">Указанная сумма меньше минимальной допустимой ставки</string>
+    <string name="min_bid">Минимальная ставка</string>
+    <string name="new_bid">Новая ставка</string>
+    <string name="hidden_bid">Ставка скрыта</string>
+    <string name="answer">Ответить</string>
+
+    <string name="charity_info">Информация</string>
+    <string name="charity_statistic">Статистика</string>
+    <string name="charity_comments">Комментарии</string>
+
+    <string name="auctions_won">Выиграно ставок</string>
+    <string name="subscribe">Подписаться</string>
+    <string name="offer_meeting">Предложить встречу</string>
+    
+    <string name="bid_confirmation">Подтверждение ставки</string>
+    <string name="bid_amount">Сумма ставки:</string>
+
+    <string name="favourite_auctions">Избранные встречи</string>
+    <string name="won_auctions">Выигранные встречи</string>
+    <string name="created_auctions">Выставленные встречи</string>
+
+</resources>

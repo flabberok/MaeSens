@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+<LinearLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_statistics_date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="Date/Time"
+        />
+
+    <TextView
+        android:id="@+id/tv_statistics_type_transaction"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="Type transaction"
+        />
+
+    <by.maesens.android.ui.view.UserPhotoView
+        android:id="@+id/upv_statistics_donated"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="donated"
+        />
+
+    <TextView
+
+        android:id="@+id/tv_statistics_amount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="amount"
+        />
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>

@@ -1,0 +1,355 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvAuctionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/fragment_small_vertical_padding"
+            android:paddingBottom="@dimen/fragment_big_vertical_padding"
+            android:textColor="@color/colorMeetingsDarkText"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <by.maesens.android.ui.view.UserPhotoView
+            android:id="@+id/uvAuctionOwner"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvAuctionTitle"/>
+
+        <TextView
+            android:id="@+id/tvAuctionOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/user_name_horizontal_padding"
+            android:layout_below="@+id/tvAuctionTitle"
+            android:layout_toRightOf="@+id/uvAuctionOwner"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAuctionInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/uvAuctionOwner"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgAuction"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="@dimen/card_elements_margin"/>
+
+                <by.maesens.android.ui.view.FBView
+                    android:id="@+id/fbShare"
+                    android:layout_below="@+id/imgAuction"
+                    android:layout_width="@dimen/share_width"
+                    android:layout_height="@dimen/share_height"
+                    android:paddingTop="@dimen/share_padding_top"
+                    android:paddingLeft="@dimen/share_padding_left"
+                    android:paddingRight="@dimen/share_padding_right"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/card_elements_margin"/>
+
+                <by.maesens.android.ui.view.VKView
+                    android:id="@+id/vkShare"
+                    android:layout_below="@+id/imgAuction"
+                    android:layout_width="@dimen/share_width"
+                    android:layout_height="@dimen/share_height"
+                    android:paddingTop="@dimen/share_padding_top"
+                    android:paddingLeft="@dimen/share_padding_left"
+                    android:paddingRight="@dimen/share_padding_right"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:id="@+id/vBetweenLine"
+                    android:layout_below="@+id/fbShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBorderElementsLight"
+                    android:layout_marginTop="@dimen/card_elements_margin"/>
+
+                <TextView
+                    android:id="@+id/tvAuctionDescription"
+                    android:layout_below="@+id/vBetweenLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_elements_margin"
+                    style="@style/Maesens.TextView.Dark" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvBidInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cvAuctionInfo"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/card_elements_margin"
+                android:paddingRight="@dimen/card_elements_margin"
+                android:paddingTop="@dimen/card_elements_margin"
+                android:paddingBottom="@dimen/card_elements_margin">
+
+                <TextView
+                    android:id="@+id/tvEndedTitle"
+                    android:text="@string/auction_ended"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Maesens.TextView" />
+
+                <TextView
+                    android:id="@+id/tvAuctionDateOfEnd"
+                    android:layout_below="@+id/tvEndedTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    style="@style/Maesens.TextView.Blue" />
+
+                <TextView
+                    android:id="@+id/tvAuctionTimeToTheEnd"
+                    android:layout_below="@+id/tvEndedTitle"
+                    android:layout_toRightOf="@+id/tvAuctionDateOfEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/user_name_horizontal_padding"
+                    style="@style/Maesens.TextView.Dark" />
+
+                <TextView
+                    android:id="@+id/tvLastBidTitle"
+                    android:text="@string/last_bid"
+                    android:layout_below="@+id/tvAuctionDateOfEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_big_horizontal_padding"
+                    android:layout_marginBottom="@dimen/fragment_small_horizontal_padding"
+                    style="@style/Maesens.TextView" />
+
+                <TextView
+                    android:id="@+id/tvLastBid"
+                    android:layout_below="@+id/tvLastBidTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    style="@style/Maesens.TextView.Blue" />
+
+                <by.maesens.android.ui.view.UserPhotoView
+                    android:id="@+id/uvAuctionUserCurrentWinner"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tvLastBidTitle"
+                    android:layout_toRightOf="@+id/tvLastBid"
+                    android:layout_marginLeft="@dimen/fragment_big_horizontal_padding"
+                    android:layout_marginRight="@dimen/fragment_big_horizontal_padding"/>
+
+                <TextView
+                    android:id="@+id/tvCountOfBids"
+                    android:layout_below="@+id/tvLastBidTitle"
+                    android:layout_toRightOf="@+id/uvAuctionUserCurrentWinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    style="@style/Maesens.TextView.Dark" />
+
+                <EditText
+                    android:id="@+id/etChooseBidValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvLastBid"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    style="@style/Maesens.Button.WhiteAndBlue"
+                    android:background="@drawable/edittext_with_border"
+                    android:layout_marginTop="@dimen/card_elements_margin"
+                    android:layout_marginBottom="@dimen/card_elements_margin"/>
+
+                <Button
+                    android:id="@+id/bDoBid"
+                    android:layout_below="@+id/etChooseBidValue"
+                    android:text="@string/increase_bid"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Maesens.Button.Light"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvLeadersTitle"
+            android:text="@string/auction_leaders"
+            android:layout_below="@+id/cvBidInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginLeft="@dimen/fragment_small_horizontal_padding"
+            android:layout_marginRight="@dimen/fragment_small_horizontal_padding"
+            style="@style/Maesens.TextView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvLeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLeadersTitle"
+            android:layout_marginLeft="@dimen/card_elements_big_margin"
+            android:layout_marginRight="@dimen/fragment_big_horizontal_padding"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCharityInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rvLeaders"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvRecipientOfAid"
+                    android:text="@string/recipient_of_aid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_elements_margin"
+                    style="@style/Maesens.TextView.Dark" />
+
+                <View
+                    android:id="@+id/vCharityTitleLine"
+                    android:layout_below="@+id/tvRecipientOfAid"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBorderElementsLight"/>
+
+                <ImageView
+                    android:id="@+id/imgCharity"
+                    android:layout_below="@+id/vCharityTitleLine"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="@dimen/card_elements_big_margin"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityName"
+                    android:layout_below="@+id/vCharityTitleLine"
+                    android:layout_toRightOf="@+id/imgCharity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:padding="@dimen/user_name_horizontal_padding"
+                    style="@style/Maesens.TextView"
+                    android:layout_marginTop="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityShortDescription"
+                    android:layout_toRightOf="@+id/imgCharity"
+                    android:layout_below="@+id/tvCharityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/user_name_horizontal_padding"
+                    style="@style/Maesens.TextView.Light"
+                    android:layout_marginTop="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityPurpose"
+                    android:layout_below="@+id/imgCharity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_elements_margin"
+                    android:layout_marginBottom="@dimen/card_elements_margin"
+                    style="@style/Maesens.TextView.Dark"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityCurrentSum"
+                    android:layout_below="@+id/tvCharityPurpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Maesens.TextView"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <ProgressBar
+                    android:id="@+id/pbCharityProgress"
+                    android:layout_below="@+id/tvCharityCurrentSum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    style="@style/CharityProgressBar"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityProgressPercent"
+                    android:layout_below="@+id/pbCharityProgress"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+                    android:layout_marginBottom="@dimen/fragment_big_vertical_padding"
+                    style="@style/Maesens.TextView.Dark"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <TextView
+                    android:id="@+id/tvCharityCountOfDays"
+                    android:layout_below="@+id/pbCharityProgress"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+                    android:layout_marginBottom="@dimen/fragment_big_vertical_padding"
+                    style="@style/Maesens.TextView.Dark"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"/>
+
+                <Button
+                    android:id="@+id/bDonateDirectly"
+                    android:layout_below="@+id/tvCharityProgressPercent"
+                    android:text="@string/donate_directly"
+                    android:textSize="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Maesens.Button.White"
+                    android:layout_marginLeft="@dimen/card_elements_big_margin"
+                    android:layout_marginRight="@dimen/card_elements_big_margin"
+                    android:layout_marginBottom="@dimen/card_elements_big_margin"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

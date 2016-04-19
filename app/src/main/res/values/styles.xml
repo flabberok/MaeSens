@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackgroundScreens</item>
+
+        <item name="android:textColorPrimary">@color/colorLightGreyText</item>
+        <item name="android:textColor">@color/colorMeetingsBlackText</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <item name="colorButtonNormal">@color/colorLogoButtons</item>
+        <item name="textColorSearchUrl">@color/colorLightGreyText</item>
+        <item name="colorControlNormal">@color/colorBackgroundScreens</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <!-- Buttons styles-->
+    <style name="Maesens.Button" parent="Base.Widget.AppCompat.Button">
+    </style>
+
+    <style name="Maesens.Button.Light" parent="Maesens.Button">
+        <item name="android:background">@color/colorLogoButtons</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Maesens.Button.White" parent="Maesens.Button">
+        <item name="android:background">@drawable/white_button</item>
+        <item name="android:textColor">@color/colorMeetingsGreyText</item>
+    </style>
+
+    <style name="Maesens.Button.WhiteAndBlue" parent="Maesens.Button">
+        <item name="android:background">@drawable/white_button</item>
+        <item name="android:textColor">@color/colorLogoButtons</item>
+    </style>
+
+    <!-- TextView styles-->
+    <style name="Maesens.TextView" parent="@android:style/Widget.TextView">
+        <!-- place attributes here-->
+    </style>
+
+    <style name="Maesens.TextView.Dark" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorMeetingsDarkText</item>
+    </style>
+
+    <style name="Maesens.TextView.Light" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorLightGreyText</item>
+    </style>
+
+    <style name="Maesens.TextView.Blue" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorLogoButtons</item>
+    </style>
+
+    <style name="Maesens.TextView.Grey" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorMeetingsGreyText</item>
+
+    </style>
+
+    <style name="Maesens.TextView.Black" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorMeetingsBlackText</item>
+    </style>
+
+    <style name="TextCounter" parent="Maesens.TextView">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/textview_circle_background</item>
+    </style>
+
+    <!-- ProgressBar styles-->
+    <style name="Maesens.ProgressBarHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">@dimen/navigationView_textSize</item>
+        <item name="android:listPreferredItemHeightSmall">@dimen/navigationView_itemHieght</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/navigation_view_list_state</item>
+        <item name="itemIconTint">@color/navigation_view_list_state</item>
+        <item name="itemBackground">@drawable/drawer_item_selector</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="SpinnerItem">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="SpinnerShortItem" parent="SpinnerItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="SpinnerDropDownItem">
+
+    </style>
+
+    <style name="CharityProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/charity_progress_bar</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">10dp</item>
+    </style>
+
+    <style name="TabLayoutPagerDark" parent="Widget.Design.TabLayout">
+        <item name="tabMode">scrollable</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="tabTextColor">@color/colorLightGreyText</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">3.5dp</item>
+    </style>
+
+    <style name="ShadowTextStyle">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+</resources>

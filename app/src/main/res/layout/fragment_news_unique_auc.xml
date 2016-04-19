@@ -1,0 +1,14 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/viewWideSearch"
+    android:id="@+id/news_unique__swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_unique_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eef1f2"/>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_create_meeting"
+        android:icon="@drawable/ic_create_meeting_24px"
+        android:title="@string/create_meeting" />
+    <item
+        android:id="@+id/menu_my_page"
+        android:icon="@drawable/ic_my_page_24dp"
+        android:title="@string/my_page" />
+    <item
+        android:id="@+id/menu_news"
+        android:icon="@drawable/ic_news_24dp"
+        android:title="@string/news" />
+    <item
+        android:id="@+id/menu_messages"
+        android:icon="@drawable/ic_message_24px"
+        android:title="@string/messages"
+        app:actionLayout="@layout/menu_counter" />
+    <item
+        android:id="@+id/menu_meetings"
+        android:icon="@drawable/ic_my_meetings_24dp"
+        android:title="@string/meetings" />
+    <item
+        android:id="@+id/menu_my_meetings"
+        android:icon="@drawable/ic_my_meetings_24dp"
+        android:title="@string/my_meetings" />
+    <group android:id="@+id/meetings_group">
+        <item
+            android:id="@+id/menu_pushed"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/pushed" />
+        <item
+            android:id="@+id/menu_won"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/won" />
+        <item
+            android:id="@+id/menu_favourites"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/favourites" />
+    </group>
+    <item
+        android:id="@+id/menu_my_binds"
+        android:icon="@drawable/ic_my_binds_24px"
+        android:title="@string/my_binds" />
+    <item
+        android:id="@+id/menu_projects"
+        android:icon="@drawable/ic_projects_24px"
+        android:title="@string/projects" />
+
+    <group android:id="@+id/footer_group">
+        <item
+            android:id="@+id/menu_billing"
+            android:icon="@drawable/ic_billing_24px"
+            android:title="@string/billing" />
+        <item
+            android:id="@+id/menu_information"
+            android:icon="@drawable/ic_info_24dp"
+            android:title="@string/information" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout_24dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

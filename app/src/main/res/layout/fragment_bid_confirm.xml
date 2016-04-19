@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:id="@+id/tvBalanceConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/balance"/>
+
+                <TextView
+                    android:id="@+id/tvBalanceValConfirm"
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_toRightOf="@id/tvBalanceConfirm"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="123"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_below="@id/tvBalanceConfirm"
+                    android:id="@+id/tvBalanceSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_balance"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:id="@+id/tvAddToBalance"
+                    android:layout_toRightOf="@id/tvBalanceSubTitle"
+                    android:layout_alignBaseline="@id/tvBalanceSubTitle"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="123"/>
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_below="@id/tvBalanceSubTitle"
+                    style="@style/Maesens.Button.White"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+
+                <Button
+                    android:id="@+id/btnSend"
+                    android:layout_toRightOf="@id/btnBack"
+                    android:layout_alignBaseline="@id/btnBack"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/btn_send"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

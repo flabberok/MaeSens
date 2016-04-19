@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c2b36</color>
+    <color name="colorPrimaryTransparent">#331c2b36</color>
+    <color name="colorPrimaryDark">#131e26</color>
+    <color name="colorAccent">#2196f3</color>
+    <color name="colorLogoButtons">#2196f3</color>
+    <color name="colorBackgroundScreens">#f0f3f4</color>
+    <color name="colorBackgroundAuth">#f2f4f8</color>
+    <color name="colorBackgroundCards">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorMeetingsBlackText">#000000</color>
+    <color name="colorMeetingsGreyText">#363f44</color>
+    <color name="colorMeetingsDarkText">#444444</color>
+    <color name="colorLightGreyText">#b0babf</color>
+    <color name="colorMenuText">#869fb1</color>
+    <color name="colorStatusOnline">#9ac462</color>
+    <color name="colorTickLike">#7cc576</color>
+    <color name="colorCross">#f05050</color>
+    <color name="colorBackgroundCircle">#edf1f2</color>
+    <color name="colorBackgroundCardTitle">#f6f8f8</color>
+    <color name="colorBackgroundTags">#e7e7e7</color>
+    <color name="colorUnpressedLike">#58666e</color>
+    <color name="colorBorderElementsLight">#d8e1e3</color>
+    <color name="colorBorderElementsDark">#c8cfd0</color>
+    <color name="colorProgressBarLight">#98c9f0</color>
+    <color name="colorBackgroundComplexButtonLight">#0d8aee</color>
+    <color name="colorBackgroundComplexButtonDark">#0c7dd7</color>
+    <color name="colorGradientLeft">#55649a</color>
+    <color name="colorGradientRightMockup">#4c7791</color>
+    <color name="colorGradientRightSite">#3c9682</color>
+</resources>

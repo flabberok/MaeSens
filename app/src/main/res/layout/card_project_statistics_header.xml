@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+    android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+    app:cardBackgroundColor="@color/colorBackgroundCards"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:minHeight="@dimen/min_height_header"
+                  android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_statistics_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Date/Time"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_statistics_type_transaction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Type transaction"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_statistics_donated"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="donated"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_statistics_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="amount"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

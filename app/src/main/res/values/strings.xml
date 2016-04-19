@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">MaeSens</string>
+
+    <integer name="com_vk_sdk_AppId">5342756</integer>
+    <!--<string name="facebook_app_id">758854674146769</string>-->
+    <string name="facebook_app_id">344457192345190</string>
+
+    <string name="all_auctions_title">My meetings</string>
+    <string name="all_auctions_sort">sort by</string>
+    <string name="all_auctions_sort_new">New</string>
+    <string name="all_auctions_sort_popular">Popular</string>
+    <string name="all_auctions_wide_search">Advanced search</string>
+
+    <string name="wide_search_city">in the city</string>
+    <string name="wide_search_spinner_cities_prompt">Choose the city</string>
+    <string name="wide_search_category">category</string>
+    <string name="wide_search_spinner_categories_prompt">Choose the category</string>
+    <string name="wide_search_sort">sort by</string>
+    <string name="wide_search_rb_pair">pare</string>
+    <string name="wide_search_rb_group">group</string>
+    <string name="wide_search_auction_ended">Show the last</string>
+    <string name="wide_search_btn_search">Search</string>
+    <string name="wide_search_btn_cancel">Clear</string>
+
+    <string name="choose_city">Choose city</string>
+    <string name="choose_category">Choose category</string>
+    <string name="choose_order">Sort by</string>
+
+    <array name="wide_search_sort">
+        <item>Date of creation (new)</item>
+        <item>Date of creation (old)</item>
+        <item>MAX bid</item>
+        <item>MIN bid</item>
+        <item>Popular</item>
+        <item>Not Popular</item>
+    </array>
+
+    <!-- Menu items-->
+    <string name="create_meeting">Create meeting</string>
+    <string name="my_page">My page</string>
+    <string name="news">News</string>
+    <string name="messages">Messages</string>
+    <string name="add_meeting">Add meeting</string>
+    <string name="my_meetings">My meetings</string>
+    <string name="meetings">Meetings</string>
+    <string name="pushed">Pushed</string>
+    <string name="won">Won</string>
+    <string name="favourites">Favourites</string>
+    <string name="my_binds">My binds</string>
+    <string name="projects">Projects</string>
+    <string name="billing">Billing</string>
+    <string name="information">Information</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <string name="select_project_criterias">Choose</string>
+    <string name="text_end_time_first">to the end</string>
+    <string name="text_end_time_second">days</string>
+    <string name="text_persent">%</string>
+    <string name="text_infinity">&#8734;</string>
+
+
+    <string name="no_internet_connection">No internet connection</string>
+
+    <string name="recipient_of_aid">The recipient of aid</string>
+    <string name="donate_directly">Donate directly</string>
+
+    <string name="text_project_endeded">Auction is ended</string>
+    <string name="text_project_has_not_end_time">"Auction hasn't the time bounds "</string>
+
+    <string name="nothing_found">Nothing found</string>
+    <string name="one_day_left">1 day left</string>
+
+    <string name="project_categories">project categories</string>
+    <string name="projects_type_sort">projects type sort</string>
+    <string name="btn_search">Search</string>
+    <string name="sort_projects_parameter_all">ALL</string>
+    <string name="sort_projects_parameter_top">TOP</string>
+    <string name="sort_projects_parameter_new">NEW</string>
+    <string name="sort_projects_parameter_old">OLD</string>
+    <string name="sort_projects_parameter_close_enough">CLOSE ENOUGH</string>
+
+    <string name="no_bids">NO BIDS</string>
+
+    <string name="auction_ended">Ended:</string>
+    <string name="last_bid">Last bid:</string>
+    <string name="increase_bid">Increase bid</string>
+    <string name="until_the_end">until the end</string>
+    <string name="days">d</string>
+    <string name="bids">bids</string>
+
+    <string name="auction_leaders">Leaders of the auction:</string>
+    <string name="auction_winners">Winners of the auction:</string>
+    <string name="bids_story">Bids story:</string>
+
+    <!--Text for sign/log in-->
+    <string name="account_already_exists">Account already exists</string>
+    <string name="hint_username">User name</string>
+    <string name="hint_password">Password</string>
+    <string name="password">password</string>
+    <string name="sign_in">sign in</string>
+    <string name="balance">Your balance: </string>
+    <string name="choose_sum">Choose any sum or enter your own</string>
+    <string name="bid_1">100 000</string>
+    <string name="bid_2">200 000</string>
+    <string name="bid_3">500 000</string>
+    <string name="bid_4">750 000</string>
+    <string name="bid_5">1 000 000</string>
+    <string name="bid_x">Another sum</string>
+    <string name="continue_btn">Continue</string>
+    <string name="agree_str">I agree with </string>
+    <string name="agree_rules">site rules</string>
+    <string name="enter_sum">Enter sum</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_info">By clicking \"Confirm\", you agree to pay an appointment if you win.</string>
+    <string name="add_to_balance">Add to balance:</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_send">Send</string>
+    <string name="sell_meetings">Meetings sold</string>
+    <string name="bids_made">Bids made</string>
+    <string name="register_date">Registered</string>
+    <string name="stats">Statistics</string>
+    <string name="bid_date">Date/Time</string>
+    <string name="bid_type">Payment type</string>
+    <string name="bid_payment_meeting">Payment for a meeting</string>
+    <string name="tv_purpose_project">Purpose</string>
+    <string name="tv_description_project">Description</string>
+    <string name="tv_charity_or">or</string>
+    <string name="create_auction">Create auction</string>
+    <string name="raised_funds_from">raised funds from</string>
+    <string name="support_project">To support the project directly</string>
+    <string name="meetings_in_support">Meetings in support</string>
+    <string name="show_all">Show all</string>
+
+    <string name="winner">Winner:</string>
+    <string name="meeting_ended">Meeting is ended</string>
+    <string name="unique">Unique meetings</string>
+    <string name="new_meetings">New meetings</string>
+    <string name="made_bid"> made a bid </string>
+    <string name="made_comment"> made comment</string>
+
+    <string name="total_sum">Total sum</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="vk">Vkontakte</string>
+    <string name="fb">Facebook</string>
+    <string name="verification">Verification</string>
+    <string name="about_user">About user</string>
+    <string name="no_info">User has not add any information yet.</string>
+    <string name="interests">Interests</string>
+    <string name="friends">Friends</string>
+    <string name="active_auctions">Active auctions</string>
+    <string name="ended_auctions">Ended auctions</string>
+
+
+    <string name="my_bets_title">My bets</string>
+
+
+    <string name="type_donation_1">Оплата встречи</string>
+    <string name="type_donation_2">Перевод напрямую</string>
+    <string name="type_donation_4">Скрытое пожертвование</string>
+
+
+    <string name="user_settings">User settings</string>
+    <string name="settings_main">Main</string>
+    <string name="settings_personal">Personal</string>
+    <string name="settings_contacts">Contacts</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_linking">Linking</string>
+    <string name="settings_interests">Interests</string>
+    <string name="settings_password">Change password</string>
+    <string name="settings_security">Security</string>
+    <string name="update_photo_title">Update photo</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_photo">Choose from gallery</string>
+    <string name="update_avatar">Update photo</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="city">City</string>
+    <string name="day_of_birth">Day of birth</string>
+    <string name="hide_date">Will be hidden from other users</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="about_yourself">About yourself</string>
+    <string name="update_info">Update info</string>
+    <string name="show_ended">Show ended auctions</string>
+    <string name="show_age">Hide age</string>
+    <string name="save">Save</string>
+    <string name="add_interest">Interests</string>
+    <string name="add">Add</string>
+    <string name="empty_interest">Write interests!</string>
+    <string name="interest_length">Max length is 50 characters</string>
+    <string name="notif_success_auc">Notification about success created auctions</string>
+    <string name="notif_beated_bids">Notification about beated bits</string>
+    <string name="notif_new_bids">Notification about new bids on your auction</string>
+    <string name="notif_project_ended">Notification after project ends</string>
+    <string name="notif_remind_day">Notification the day before ends auction with your bids</string>
+    <string name="notif_remind_three_hours">Notification three hours before ends auction with your bids</string>
+    <string name="notif_unread_messages_hour">Notifications about unread messages in last hour</string>
+    <string name="notif_auc_with_you">Notification when somebody wants to buy meeting with you</string>
+    <string name="notif_auc_created">Notification when a person you have invited made a bit</string>
+    <string name="change">Change</string>
+    <string name="chain">Chain</string>
+    <string name="change_password">Change password</string>
+    <string name="delete_interest">Press on the element for deleting from list</string>
+    <string name="change_email">Change email address</string>
+    <string name="change_email_message">Enter new email. A message with instructions will be sent on it.</string>
+    <string name="incorrect_email">Incorrect email</string>
+    <string name="email_change_success">Check your inbox and follow instructions.</string>
+    <string name="email_change_error">Server denied you request. Try to input new email again.</string>
+    <string name="phone_change_title">Change phone number</string>
+    <string name="phone_change_message">You will receive sms with activation code</string>
+    <string name="phone_change_new_number">New number</string>
+    <string name="phone_change_code">Activation code</string>
+    <string name="phone_format">format +375291234567</string>
+    <string name="code_format">3 digits</string>
+    <string name="take_code">Take code</string>
+    <string name="confirm_code">Confirm code</string>
+
+    <string name="auction_info">Auction information</string>
+    <string name="auction_bids">Story of bids</string>
+    <string name="auction_comments">Comments</string>
+
+    <string name="bid_less_than_minimum">This amount is less than the minimum bid</string>
+    <string name="min_bid">Minimum bid is</string>
+    <string name="new_bid">New bid</string>
+    <string name="hidden_bid">The bid is hidden</string>
+
+    <string name="charity_info">Charity information</string>
+    <string name="charity_statistic">Statistic</string>
+    <string name="charity_comments">Comments</string>
+
+    <string name="auctions_won">Auctions won</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="offer_meeting">Offer a meeting</string>
+
+    <string name="bid_confirmation">Confirmation of the bid</string>
+    <string name="bid_amount">Bid:</string>
+
+    <string name="favourite_auctions">Favourite auctions</string>
+    <string name="won_auctions">Won auctions</string>
+    <string name="created_auctions">Created auctions</string>
+
+</resources>

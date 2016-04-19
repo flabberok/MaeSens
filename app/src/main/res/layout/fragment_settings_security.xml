@@ -1,0 +1,336 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/settingsPhones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone"/>
+
+                <LinearLayout
+                    android:id="@+id/lnPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPhone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/etPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChangePhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_below="@+id/tvPhone"
+                        android:text="@string/change"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lnPhone"
+                    android:text="@string/email"/>
+
+                <LinearLayout
+                    android:id="@+id/lnEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEmail"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/etEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChangeEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:text="@string/change"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/settingsVerification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settingsPhones"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+
+                <TextView
+                    android:id="@+id/tvVerification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/verification"
+                    android:textSize="16dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVerification"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_email_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyEmail"
+                        android:layout_alignTop="@id/imgVerifyEmail"
+                        android:layout_toRightOf="@id/imgVerifyEmail"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/email"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgEmailVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyEmail"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyEmail"
+                        android:padding="3dp"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChainEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyEmail"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyEmail"
+                        android:text="@string/chain"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlEmail"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_call_24dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyPhone"
+                        android:layout_alignTop="@id/imgVerifyPhone"
+                        android:layout_toRightOf="@id/imgVerifyPhone"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/phone"/>
+
+                    <ImageView
+
+                        android:visibility="gone"
+                        android:id="@+id/imgPhoneVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyPhone"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyPhone"
+                        android:padding="3dp"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChainPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyPhone"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyPhone"
+                        android:text="@string/chain"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlVk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlPhone"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyVk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_vk"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyVk"
+                        android:layout_alignTop="@id/imgVerifyVk"
+                        android:layout_toRightOf="@id/imgVerifyVk"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/vk"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgVkVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyVk"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyVk"
+                        android:padding="3dp"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChainVk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyVk"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyVk"
+                        android:text="@string/chain"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlFb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlVk"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgVerifyFb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_round"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_fb"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyFb"
+                        android:layout_alignTop="@id/imgVerifyFb"
+                        android:layout_toRightOf="@id/imgVerifyFb"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/fb"/>
+
+                    <ImageView
+                        android:id="@+id/imgFbVerify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyFb"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyFb"
+                        android:padding="3dp"
+                        android:visibility="gone"/>
+
+                    <Button
+                        style="@style/Maesens.Button.Light"
+                        android:id="@+id/btnChainFb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/imgVerifyFb"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/imgVerifyFb"
+                        android:text="@string/chain"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/settingsPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settingsVerification"
+            android:layout_marginBottom="@dimen/fragment_small_vertical_padding"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"
+            app:cardBackgroundColor="@color/colorBackgroundCards"
+            app:cardUseCompatPadding="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fragment_big_horizontal_padding">
+                <Button
+                    android:id="@+id/btnChangePassword"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:padding="8dp"
+                    android:text="@string/change_password"
+                    style="@style/Maesens.Button.Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

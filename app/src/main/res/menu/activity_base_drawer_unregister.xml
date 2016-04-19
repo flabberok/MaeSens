@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_meetings"
+            android:icon="@drawable/ic_my_meetings_24dp"
+            android:title="@string/meetings" />
+        <item
+            android:id="@+id/menu_projects"
+            android:icon="@drawable/ic_projects_24px"
+            android:title="@string/projects" />
+    </group>
+
+    <group android:id="@+id/footer_group">
+        <item
+            android:id="@+id/menu_information"
+            android:icon="@drawable/ic_info_24dp"
+            android:title="@string/information" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/menu_login"
+            android:icon="@drawable/ic_login_24dp"
+            android:title="@string/login" />
+        <item
+            android:id="@+id/menu_sign_up"
+            android:icon="@drawable/ic_signup_24dp"
+            android:title="@string/sign_up" />
+    </group>
+
+</menu>

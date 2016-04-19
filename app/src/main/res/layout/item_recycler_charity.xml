@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="@dimen/fragment_small_vertical_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_elements_small_margin"
+        android:layout_marginBottom="@dimen/fragment_big_vertical_padding"
+        android:layout_marginLeft="@dimen/card_elements_margin"
+        android:layout_marginRight="@dimen/card_elements_margin">
+
+        <ImageView
+            android:id="@+id/img_project"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_project_name"
+            style="style/Maesens.TextView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_project"
+            android:layout_marginLeft="@dimen/fragment_big_horizontal_padding"
+            android:gravity="left|center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_project_category"
+            style="@style/Maesens.TextView.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/img_project"
+            android:layout_below="@id/tv_project_name"
+            android:layout_above="@+id/tv_money"
+            android:layout_marginLeft="@dimen/fragment_big_horizontal_padding"
+            android:gravity="left|center_vertical"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/img_project"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/fragment_big_vertical_padding"/>
+
+        <ProgressBar
+            android:id="@+id/pb_progress"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_money"
+            style="@style/CharityProgressBar"/>
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pb_progress"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            style="@style/Maesens.TextView.Dark"/>
+
+        <TextView
+            android:id="@+id/tv_remaining_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pb_progress"
+            android:layout_marginTop="@dimen/fragment_small_vertical_padding"
+            style="@style/Maesens.TextView.Dark"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
